@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        //setContentView(R.layout.activity_main)
         //ui()
 
         //Linear Layout
@@ -42,6 +42,8 @@ class MainActivity : AppCompatActivity() {
         //setContentView(R.layout.layout_login_instagram_linear)
         //setContentView(R.layout.layout_login_instagram_relative)
         //setContentView(R.layout.layout_login_instragram_constraint)
+
+        setContentView(R.layout.layout_famous)
     }
 
     private fun ui(){

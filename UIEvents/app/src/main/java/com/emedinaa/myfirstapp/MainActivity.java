@@ -42,6 +42,13 @@ public class MainActivity extends AppCompatActivity {
                 gotoKeyboardEvents();
             }
         });
+
+        findViewById(R.id.btnTest).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToBasicEventsActivity();
+            }
+        });
     }
 
     private void gotoBasicEvents() {
@@ -58,5 +65,15 @@ public class MainActivity extends AppCompatActivity {
 
     private void gotoKeyboardEvents() {
         startActivity(new Intent(this,KeyboardEventsActivity.class));
+    }
+
+    private void goToBasicEventsActivity(){
+
+        //1. Pantalla inicial
+        //2. Pantalla destino
+        //3. startActivity
+
+        Intent intent= new Intent(this,BasicEventsActivity.class);
+        startActivity(intent);
     }
 }
