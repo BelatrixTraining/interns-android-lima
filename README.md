@@ -1,6 +1,9 @@
 # interns-android-lima-
 interns-android-lima - November 2018
 
+## Slides
+
+https://docs.google.com/presentation/d/19mzDJ2zvdz36uvwM3Pc_Ep0Y5V6_XxE0D6iL7CBv3NA/edit?usp=sharing
 
 ## Resources
 
