@@ -38,6 +38,7 @@ public class GalleryActivity extends AppCompatActivity {
                 R.drawable.sample_7};
 
         img.setImageResource(images[0]);
+
         count=0;
         txtImg.setText("Imagen " + count);//set get
 
@@ -55,9 +56,11 @@ public class GalleryActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 count++;
+                //ArrayIndexOutOfBoundsException
                 if (count >= images.length) {
                     count = 0;
                 }
+
                 img.setImageResource(images[count]);
                 txtImg.setText("Imagen " + count);
                 Log.v("CONSOLE", " count " + count);

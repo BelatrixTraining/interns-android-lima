@@ -40,13 +40,61 @@ public class RegisterBaseActivity extends AppCompatActivity {
         butSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(validarCampos()){
                     //enviar al servidor
-                    Toast.makeText(RegisterBaseActivity.this,"Enviando al servidor",Toast.LENGTH_LONG).show();
+                   // Toast.makeText(RegisterBaseActivity.this,"Enviando al servidor",Toast.LENGTH_LONG).show();
 
+                    showMessage();
+                }else{
+                    Toast.makeText(RegisterBaseActivity.this,"Horror!",Toast.LENGTH_LONG).show();
+
+                }
             }
         });
     }
 
+    private boolean validarCampos(){
+        clear();
+        //capturar campos
+        name= eteName.getText().toString().trim();
+        email= eteEmail.getText().toString().trim();
+        password1= etePassword1.getText().toString().trim();
+        password2= etePassword2.getText().toString().trim();
+
+        if(name.isEmpty()){
+            eteName.setError("Nombre inválido");
+            return false;
+        }
+
+        if(email.isEmpty()){
+            eteEmail.setError("Email inválido");
+            return false;
+        }
+
+        if (password1.isEmpty()) {
+            etePassword1.setError("Password inválido");
+            return false;
+        }
+
+        if (password2.isEmpty()) {
+            etePassword2.setError("Password inválido");
+            return false;
+        }
+
+        if(!isEmailValid(email)){
+            eteEmail.setError("Email inválido");
+            return false;
+        }
+
+        if(!password1.equals(password2)){
+            etePassword1.setError("Passwords diferentes");
+            return false;
+        }
+        /*if(name.length()<2){
+            return false;
+        }*/
+        return true;
+    }
 
     private boolean validateForm() {
 
@@ -87,7 +135,6 @@ public class RegisterBaseActivity extends AppCompatActivity {
     }
 
     private void showMessage() {
-
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this)
                 .setTitle("")

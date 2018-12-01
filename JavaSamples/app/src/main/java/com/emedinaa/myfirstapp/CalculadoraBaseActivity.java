@@ -37,7 +37,7 @@ public class CalculadoraBaseActivity extends AppCompatActivity implements View.O
         iviMultiply= findViewById(R.id.iviMultiply);
         iviDivide= findViewById(R.id.iviDivide);
 
-        iviSum.setOnClickListener(this);
+        iviSum.setOnClickListener(this);//java.lang.NullPointerException:
         iviSubtract.setOnClickListener(this);
         iviMultiply.setOnClickListener(this);
         iviDivide.setOnClickListener(this);
@@ -48,30 +48,56 @@ public class CalculadoraBaseActivity extends AppCompatActivity implements View.O
 
         //TODO capturar valores
 
+        String mOp1= editTextOp1.getText().toString().trim();
+        String mOp2= editTextOp2.getText().toString().trim();
+        Log.v(TAG, "mOp1 "+mOp1 +" mOp2 "+mOp2);
+
+        op1= Integer.parseInt(mOp1);
+        op2= Integer.parseInt(mOp2);
+
         //TODO operaciones
         switch (v.getId())
         {
             case R.id.iviSum:
-                Log.v(TAG, "sumar");
+
+                op= op1+op2;
+                Log.v(TAG, "sumar mOp "+op);
+
                 break;
 
             case R.id.iviSubtract:
+                op= op1-op2;
                 Log.v(TAG, "restar");
                 break;
 
             case R.id.iviMultiply:
+                op= op1*op2;
                 Log.v(TAG, "multiplicar");
                 break;
 
             case R.id.iviDivide:
-                Log.v(TAG, "dividir");
+                //  java.lang.ArithmeticException: divide by zero
+                if(op2!=0){
+                    op= op1/op2;
+                    Log.v(TAG, "dividir");
+                }else{
+                    editTextOp2.setError("Horror!");
+                }
                 break;
 
         }
 
         //TODO mostrar resultados
-        tviOp.setText("Resultado ");
+        tviOp.setText("Resultado "+op);
 
+    }
+
+    private int suma(int op1,int op2){
+        return op1+op2;
+    }
+
+    private int restar(int op1,int op2){
+        return op1+op2;
     }
 
     @Override
