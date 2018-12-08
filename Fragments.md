@@ -1,24 +1,3 @@
-## Lesson 8 - Thursday, September 13, 2018
-
-- Review
-
-- Lesson
-
-- Samples
-
-- Homework
-
-- Resources
-
-## Review
-
-¿Qué temas vimos en la clase pasada ?
-
-Activities
-
-
-## Lesson
-
 ### Fragments, conceptos y comunicación.
 
 - Fragments
@@ -253,15 +232,6 @@ Comunicación Fragment con Fragment
 
 <img src="https://github.com/learning-android-pe/training-resources/blob/master/fragments-communication3.png?raw=true" height="480"/>
 
-## Samples
-
-
-
-## Exercises
-
-
-## Homework
-- Realizar los ejercicios  01, 02 sobre Fragments
 
 ## Resources 
 

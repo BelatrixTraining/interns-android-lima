@@ -1,22 +1,3 @@
-## Lesson 9 - Tuesday, September 18, 2018
-
-- Review
-
-- Lesson
-
-- Samples
-
-- Homework
-
-- Resources
-
-## Review
-
-¿Qué temas vimos en la clase pasada ?
-
-Activities
-
-
 ## Lesson
 
 - SharedPreferences
@@ -109,14 +90,6 @@ SharedPreferences sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE
 int defaultValue = getResources().getInteger(R.integer.saved_high_score_default_key);
 int highScore = sharedPref.getInt(getString(R.string.saved_high_score_key), defaultValue);
 ```
-
-## Samples
-
-
-## Exercises
-
-## Homework
-- xxxx
 
 ## Resources 
 

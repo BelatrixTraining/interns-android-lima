@@ -1,22 +1,4 @@
-## Lesson 11 - Tuesday, September 25, 2018
-
-- Review
-
-- Lesson
-
-- Samples
-
-- Homework
-
-- Resources
-
-## Review
-
-¿Qué temas vimos en la clase pasada ?
-
-
 ## Lesson
-
 
 *Tools*
 
@@ -282,14 +264,6 @@ Url : https://obscure-earth-55790.herokuapp.com/api/notes/59f498c6502b052218b254
     - Los fragments y las activities son Views ?, estrictamente hablando no, yo puedo crear un interface que represente lo que va a realizar una vista. La idea es trabajar con la interface y no directamente con el fragment o activity.
 
 - Presenter : Este elemento va tener la lógica , se comunica con el módelo. Recibe los cambios del modelo y actualiza la vista. Se comporta como controlador de las vistas.
-
-## Samples
-
-## Exercises
-
-## Homework
-
-- Crear una cuenta nueva en backendless, contruir una app en esta plataforma con la base de datos y conectarla a la app de clase, usando para esto las nuevas keys creadas.
 
 ## Resources 
 
